@@ -1,0 +1,316 @@
+//import styles
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700&family=Lato:wght@300;400&Source+Sans+Pro:wght@300;400&display=swap');
+//styles
+@import 'include/reset', 'include/var';
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 15px;
+    background-color: $main-light;
+
+    &__container {}
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__lang {
+
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $main-text;
+    }
+
+    &__lang--select {
+        display: inline-flex;
+        align-items: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $main-text;
+        cursor: pointer;
+
+
+        svg,
+        path {
+            height: 20%;
+            width: 20%;
+            margin-left: 8px;
+            fill: $main-text;
+        }
+    }
+
+    &__eye {
+        margin-left: 300px;
+        fill: $main-text;
+        height: 35px;
+        width: 35px;
+        cursor: pointer;
+    }
+
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+}
+
+.contacts {
+
+    &__phone {
+        font-family: 'Commissioner';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: $secondary;
+        text-decoration: none;
+        margin-right: 7.5px;
+
+        &:not(:first-child) {
+            margin-left: 7.5px;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__image {
+        margin: 0 7.5px;
+        height: 20px;
+        width: 20px;
+    }
+}
+
+//navbar
+.nav {
+    padding: 30px 0;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__brand {
+        height: 60px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+
+    &__link {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $subtitle;
+
+    }
+}
+
+//main styles
+.main {
+
+    &__slider {
+        width: 100%;
+    }
+}
+
+.slider {
+
+    &__slide {
+        height: 650px;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    &__container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        max-width: 500px;
+    }
+
+    &__subtitle {
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 25px;
+        color: $main-text;
+        margin-bottom: 50px;
+        max-width: 500px;
+    }
+
+    &__btn {
+        height: 45px;
+        width: 200px;
+        background-color: $accent;
+    }
+
+    &__arrows {
+        transform: translateY(30px);
+        margin-top: 60px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 60px;
+        width: 120px;
+
+        img {
+            cursor: pointer;
+            height: 100%;
+            width: 50%;
+        }
+
+        img:first-child {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.btn {
+    font-family: Commissioner;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $main-light;
+
+}
+
+//Преимущества
+.advantages {
+    transform: translateY(-95px);
+    padding: 0 20px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__cart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: $main-light;
+        width: 270px;
+        height: 285px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    &__image {
+        padding: 17.5px;
+        border-radius: 50%;
+        border: 3px solid $detail;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: $subtitle;
+        max-width: 230px;
+    }
+}
+
+//entry
+.entry {
+    margin-top: 5px;
+    margin-bottom: 100px;
+
+    &__container {
+        height: 645px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__content {
+        background-color: $main-light;
+        padding: 50px 50px 60px 70px;
+        width: 80%;
+    }
+
+    &__title {
+        font-family: "Commissioner";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 0.03em;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 25px;
+        color: $main-text;
+        max-width: 435px;
+    }
+
+    &__image {
+        width: 500px;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 32%);
+    }
+}
